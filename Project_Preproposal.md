@@ -2,11 +2,13 @@
 *[View Assignment Here](http://poe.olin.edu/preproposal.html) -- Due Sunday October 16, 2016*
 
 ## Project Goal
-?????
+????? MVP/Dream Goal
 
 ## Relevant Links
 [Implementation in Osaka](https://www.youtube.com/watch?v=gusJeslMbLc)
+
 [Another Japanese Implementation](https://www.youtube.com/watch?v=6wWIRcuqnqs)
+
 [Huge Circular Mall Implementation](https://www.youtube.com/watch?v=xb-gfTMtgu0)
 
 
