@@ -11,7 +11,7 @@ __For a step one iteration__ (~sprint 1 or 2, or whenever we get the physical pa
 __Our Dream Goal would include:__
 A tablet or other device that can be used for user input into the system to determine designs; variable lighting to make it look awesome; be large and self-sustaining enough to become a permanent art piece on campus! 
 
-Our biggest challenges will probably include waterproofing, budgeting and ordering parts, and scoping (e.g. time management, integration, etc.). Also, where this will end up is something we need to figure out. Speaking of which.... We would love to talk to the teaching team more about how to make this a sustainable art project that could stick around in the school somewhere. We would be really excited by making something that could be large enough to become a permanent art piece, but we've definitely heard from the Ninjas that this would be pretty difficult. We'll probably come talk to you all relatively soon to figure out scoping and end products in this case if we can do it!
+__Our biggest challenges__ will probably include waterproofing, budgeting and ordering parts, and scoping (e.g. time management, integration, etc.). Also, where this will end up is something we need to figure out. Speaking of which.... We would love to talk to the teaching team more about how to make this a sustainable art project that could stick around in the school somewhere. We would be really excited by making something that could be large enough to become a permanent art piece, but we've definitely heard from the Ninjas that this would be pretty difficult. We'll probably come talk to you all relatively soon to figure out scoping and end products!
 
 
 ## Relevant Links
