@@ -8,16 +8,19 @@ screen = pygame.display.set_mode((1000,1000))
 
 class droplet(object):
     def __init__(self):
-        self.radius =1
+        self.radius = 10
+        print "Spawned"
         self.reset()
 
     def step(self):
         self.y += self.dy
-        self.dy += -1
+        self.dy += 1
+        if (self.dy>=1000):
+            self.reset()
 
     def reset(self):
         self.y = 0
-        self.dy = -1
+        self.dy = 1
 
 
 class dropletView(object):
@@ -52,6 +55,7 @@ droplet_View=dropletView([Testnozzle, Testnozzle1])
 
 def main():
     while True:
+        time.sleep(1/60.0)
         for event in pygame.event.get():
             if event.type == pygame.QUIT: 
                 sys.exit()
