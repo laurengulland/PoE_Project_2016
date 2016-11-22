@@ -31,8 +31,10 @@ void shiftOut(int myDataPin, int myClockPin) {
   digitalWrite(myDataPin, 0);
   digitalWrite(myClockPin, 0);
   
-  for(int bytes = 0; bytes<4; bytes++){
-    for(int bits = 0; bits<8; bits++){
+  for(int bytes = 3; bytes>=0; bytes--){
+    for(int bits = 0; bits<=7; bits++){
+      digitalWrite(myClockPin, 0);
+      
       //Sets the pin to HIGH or LOW depending on pinState
       if(input[bytes] & (1<<bits)){
         digitalWrite(myDataPin, 1);
@@ -46,7 +48,6 @@ void shiftOut(int myDataPin, int myClockPin) {
       digitalWrite(myDataPin, 0);
     }
   }
-
   //stop shifting
   digitalWrite(myClockPin, 0);
 }
@@ -59,5 +60,6 @@ void writeBytes(){
 
 void serialEvent(){
   Serial.readBytes(input, 4);
+  writeBytes();
 }
 
