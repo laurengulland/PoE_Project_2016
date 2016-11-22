@@ -1,6 +1,6 @@
 #water droplet simulation code				Kimberly Winter					10/25/16
 
-import pygame, time
+import pygame, time, sys
 BLACK = (0, 0, 0)
 BLUE = (0, 0, 255)
 screen = pygame.display.set_mode((1000,1000))
@@ -9,7 +9,7 @@ screen = pygame.display.set_mode((1000,1000))
 class droplet(object):
     def __init__(self):
         self.radius = 10
-        print "Spawned"
+        print("Spawned")
         self.reset()
 
     def step(self):
