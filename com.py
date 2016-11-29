@@ -5,7 +5,6 @@ import bitstring
 def write_bytes(bits):
 	# Convert a string of bits(1s and 0s) to a BitArray 
 	byte_array = bitstring.BitArray(bin=bits)
-	print(byte_array.tobytes())
 	# Write the BitArray to the arduino
 	ser.write(bytearray(byte_array.tobytes()))
 
@@ -37,5 +36,6 @@ if __name__ == '__main__':
 		ser.write(bytearray([255, 0, 255, 0]))
 		time.sleep(.05)
 
+	write_bytes(bits)
 	# Close the serial port
 	ser.close()
