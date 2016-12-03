@@ -62,4 +62,3 @@ void serialEvent(){
   Serial.readBytes(input, 4);
   writeBytes();
 }
-
