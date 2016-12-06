@@ -3,6 +3,10 @@ import time
 from bits import *
 
 def write_bytes(show):
+	'''
+	This takes in the items created by the bits class and 
+	sends them to the arduino to display
+	'''
 	for item in show:
 		print_bits(item)
 		bits, delay = item

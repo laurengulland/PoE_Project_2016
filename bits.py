@@ -1,4 +1,9 @@
 def print_bits(item):
+	'''
+	Item: tuple of bytes and display time
+	
+	This function is used to print out bits of a byte
+	'''
 	byte, time = item
 	s = ""
 	for b in byte:
@@ -13,12 +18,30 @@ def print_bits(item):
 	print(s)
 
 def flip_bits(byte, time):
+	'''
+	byte: an array of bytes
+	time: the display time
+
+	This function takes in an array of bytes and display time. It
+	flips the bits in each of the bytes (0b11110000 -> 0b00001111)
+
+	returns: a tuple with the array of bytes and the display time
+	'''
 	val = []
 	for b in byte:
 		val.append(~b)
 	return [val, time]
 
 def phasor(time):
+	'''
+	time: the display time
+
+	This function moves a bit in a set number of bytes across the
+	bytes (0b00000001 -> 0b00000010 -> 0b00000100 -> etc...)
+
+	returns: an array of tuples that contain the byte arrays and 
+	display times
+	'''
 	show = []
 	byte = 1
 	for _ in range(3):
