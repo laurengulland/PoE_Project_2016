@@ -20,9 +20,9 @@ if __name__ == '__main__':
 	# Sleep for 2 seconds to wait for the serial to init
 	time.sleep(2)
 
-	p = phasor(.5)
+	'''p = phasor(.5)
 	for _ in range(10):
-		write_bytes(p)
+		write_bytes(p)'''
 
 	for _ in range(20):
 		write_bytes([[[0,255,0,255],.5]])
