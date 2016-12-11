@@ -66,9 +66,9 @@
 				<article id="main">
 
 					<header class="special container">
-						<span class="icon fa-laptop"></span>
+						<span class="fa fa-tint"></span>
 						<h2>Sprint <strong>1</strong></h2>
-						<p>Creating an actuating nozzle.</p>
+						<p>Creating our first actuating nozzle.</p>
 					</header>
 
 					<!-- One -->
@@ -81,31 +81,21 @@
 										<div class="sidebar">
 											<section>
 												<header>
-													<h3>Project Goals</h3>
+													<h3>Sprint goals</h3>
 												</header>
 												    <ul type="circle">
-												    	<li>Item 1</li>
-												    	<li>Item 2</li>
-												    	<li>Item 3</li>
+												    	<li>Create a technically challenging project</li>
+												    	<li>Have a sustainable and professional design</li>
+												    	<li>Utilize an unusual medium</li>
 												    </ul>
-												<footer>
-													<ul class="buttons">
-														<li><a href="#" class="button small">Learn More</a></li>
-													</ul>
-												</footer>
 											</section>
 
 											<section>
 												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 												<header>
-													<h3>Amet Lorem Tempus</h3>
+													<h3>First Pass MVP</h3>
 												</header>
-												<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-												<footer>
-													<ul class="buttons">
-														<li><a href="#" class="button small">Learn More</a></li>
-													</ul>
-												</footer>
+												<p>Have an automated curtain of water that displays a variety of images and designs controlled via a microcontroller, and successfully collects and recycles water to be self-sustaining.</p>
 											</section>
 										</div>
 
@@ -115,13 +105,24 @@
 									<!-- Content -->
 										<div class="content">
 											<section>
-												<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+												<video width="320" height="240" controls>
+  													<source src="images/firstPassNozzle.mp4" type="video/mp4">
+
+  												</video>
 												<header>
-													<h3>Dolore Amet Consequat</h3>
+													<h3>First Pass Actuating Nozzle</h3>
 												</header>
-												<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-												<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
-												<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+												<p>The initial nozzle was essential in helping us figure out if we would be able to create the water pressure that we needed using only gravity. This was done after consulting Brian Storey, a rather knowledgeable human, about fluid dynamics. We determined that we would have enough water pressure for at least one nozzle to actuate properly and create a somewhat pleasant aesthetic.</p>
+												<p>We created a waterproof system in which we placed the nozzle at the bottom of a bucket and filled the bucket about halfway with water. We connected the solenoid to the PWM port on an arduino and simply turned it on and off.</p>
+
+												<header>
+													<h3>Lessons Learned
+													</h3>
+												</header>
+
+												<p>
+													This sprint we learned that scaling appropriately is important. We also learned that budgeting for really large projects is really hard. We also learned that sometimes there are unexpected and time-costly setbacks and that ordering parts as far in advance as possible without risking purchasing the wrong parts is paramount.
+												</p>
 											</section>
 										</div>
 
@@ -136,14 +137,19 @@
 
 									<section>
 										<header>
-											<h3>This is Something</h3>
+											<h3>Mechanical Progress</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
+										<p>We prototyped one nozzle and determined that we could get the desired aesthetic flow using a nozzle.</p>
+									</section>
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<section>
+										<header>
+											<h3>Electrical Progress</h3>
+										</header>
+										<p>We were able to power a solenoid valve using an arduino and actuate it using fluctuations in voltage.
+										</p>
 									</section>
 
 								</div>
@@ -151,31 +157,10 @@
 
 									<section>
 										<header>
-											<h3>Also Something</h3>
+											<h3>Software Progress</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
+										<p>We adapted blinking light code to turn the nozzle on and off.</p>
 									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-										<footer>
-											<ul class="buttons">
-												<li><a href="#" class="button small">Learn More</a></li>
-											</ul>
-										</footer>
-									</section>
-
 								</div>
 							</div>
 						</section>
@@ -185,13 +170,6 @@
 			<!-- Footer -->
 				<footer id="footer">
 
-					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
 
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
