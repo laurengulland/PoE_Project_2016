@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 import java.util.Enumeration;
 import gnu.io.*;
 
-public class SerialConnector implements SerialPortEventListener {
+public class SerialConnector{
 
     public SerialPort serialPort;
     /** The port we're normally going to use. */
@@ -19,14 +19,9 @@ public class SerialConnector implements SerialPortEventListener {
     private static final int TIME_OUT = 2000;
     /** Default bits per second for COM port. */
     private static final int DATA_RATE = 9600;
-    private static long in;
 
     public void setCOM(String com){
         portName = com;
-    }
-
-    public String getCOM(){
-        return portName;
     }
 
     public boolean initialize(String s) {
@@ -63,9 +58,6 @@ public class SerialConnector implements SerialPortEventListener {
             output = serialPort.getOutputStream();
             writeData(0);
 
-            // add event listeners
-            serialPort.addEventListener(this);
-            serialPort.notifyOnDataAvailable(true);
             return true;
         } catch (Exception e) {
             return false;
@@ -76,20 +68,7 @@ public class SerialConnector implements SerialPortEventListener {
         if (serialPort != null) {
             serialPort.removeEventListener();
             serialPort.close();
-            in = 0;
         }
-    }
-
-    public synchronized void serialEvent(SerialPortEvent oEvent) {
-        if (oEvent.getEventType() == SerialPortEvent.DATA_AVAILABLE) {
-            try {
-                String inputLine = input.readLine();
-                in = Integer.parseInt(inputLine);
-            }
-            catch(Exception e) {
-            }
-        }
-
     }
 
     public static synchronized void writeData(String data) {
