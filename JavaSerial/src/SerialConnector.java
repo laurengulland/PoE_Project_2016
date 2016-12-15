@@ -82,11 +82,10 @@ public class SerialConnector{
     public static synchronized void writeData(int data) {
         try {
             ByteBuffer b = ByteBuffer.allocate(4);
-            b.putInt(data);
-            System.out.println(b);
+            b.putInt(~data);
             output.write(b.array());
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
         }
     }
 }
